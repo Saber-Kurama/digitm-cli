@@ -1,18 +1,22 @@
 {
-  "name": "digitm",
-  "version": "",
-  "description": "",
+  "name": "@temari/digitm",
+  "version": "0.0.1",
+  "description": "git commit 规范的 表情emoji 的提交",
   "jsnext:source": "src/index.ts",
+  "main": "main/index.js",
   "engines": {
     "node": ">=12"
   },
   "bin": {
-    "digitm": "lib/cli.js"
+    "digitm": "bin/run"
   },
   "files": [
     "lib"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "npm run build:ts",
+    "build:ts": "tsc --build"
+  },
   "repository": {
     "type": "git",
     "url": ""
