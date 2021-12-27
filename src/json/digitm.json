@@ -1,0 +1,103 @@
+{
+  "data": [
+    {
+      "emoji": "✨",
+      "entity": "&#x2728;",
+      "code": ":sparkles:",
+      "description": "新功能 feature",
+      "name": "sparkles",
+      "semver": "minor",
+      "commit-type": "feat"
+    },
+    {
+      "emoji": "🐛",
+      "entity": "&#x1f41b;",
+      "code": ":bug:",
+      "description": "修复 bug",
+      "name": "bug",
+      "semver": "patch",
+      "commit-type": "fix"
+    },
+    {
+      "emoji": "📝",
+      "entity": "&#x1f4dd;",
+      "code": ":memo:",
+      "description": "文档变更",
+      "name": "memo",
+      "semver": null,
+      "commit-type": "docs"
+    },
+    {
+      "emoji": "🎨",
+      "entity": "&#x1f3a8;",
+      "code": ":art:",
+      "description": "代码格式(不影响代码运行的变动)",
+      "name": "art",
+      "semver": null,
+      "commit-type": "style"
+    },
+    {
+      "emoji": "♻️",
+      "entity": "&#x2672;",
+      "code": ":recycle:",
+      "description": "重构(既不是增加feature，也不是修复bug)",
+      "name": "recycle",
+      "semver": null,
+      "commit-type": "refactor"
+    },
+    {
+      "emoji": "⚡️",
+      "entity": "&#x26a1;",
+      "code": ":zap:",
+      "description": "性能优化",
+      "name": "zap",
+      "semver": "patch",
+      "commit-type": "perf"
+    },
+    {
+      "emoji": "✅",
+      "entity": "&#x2705;",
+      "code": ":white_check_mark:",
+      "description": "增加测试",
+      "name": "white-check-mark",
+      "semver": null,
+      "commit-type": "test"
+    },
+    {
+      "emoji": "👷",
+      "entity": "&#x1f477;",
+      "code": ":construction_worker:",
+      "description": "构建过程或辅助工具的变动",
+      "name": "construction-worker",
+      "semver": null,
+      "commit-type": "chore"
+    },
+    {
+      "emoji": "⏪️",
+      "entity": "&#9194;",
+      "code": ":rewind:",
+      "description": "回退",
+      "name": "rewind",
+      "semver": "patch",
+      "commit-type": "revert"
+    },
+    {
+      "emoji": "🔀",
+      "entity": "&#128256;",
+      "code": ":twisted_rightwards_arrows:",
+      "description": "合并分支/代码",
+      "name": "twisted-rightwards-arrows",
+      "semver": null,
+      "commit-type": "feat"
+    },
+    {
+      "emoji": "📦️",
+      "entity": "&#1F4E6;",
+      "code": ":package:",
+      "description": "打包",
+      "name": "package",
+      "semver": "patch",
+      "commit-type": "build"
+    }
+  ]
+}
