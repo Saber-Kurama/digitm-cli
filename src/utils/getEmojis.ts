@@ -1,7 +1,7 @@
 /*
  * @Author: saber
  * @Date: 2021-12-27 18:02:18
- * @LastEditTime: 2021-12-27 19:53:34
+ * @LastEditTime: 2021-12-27 20:09:58
  * @LastEditors: saber
  * @Description:
  */
@@ -20,7 +20,6 @@ const getEmojis = async (
   skipCache: boolean = false
 ): Promise<Array<Object>> => {
   const emojisFromCache = cache.getEmojis()
-  console.log('emojisFromCache--', emojisFromCache)
   if (cache.isAvailable() && !skipCache) return emojisFromCache
 
   const spinner = ora('获取 git commit emojis').start()
@@ -33,7 +32,6 @@ const getEmojis = async (
       {}
     )
     const data = await response.json();
-    console.log('data----', data)
     const emojis: any = data.data
 
     cache.createEmojis(emojis)
@@ -45,7 +43,6 @@ const getEmojis = async (
     }
 
     spinner.succeed('git commit emojis下载成功, 这些是新表情:')
-    console.log('emojis---', emojis)
     return emojis.filter((emoji: any) => !emojisFromCache.includes(emoji))
   } catch (error) {
     spinner.fail(`Error: ${error}`)

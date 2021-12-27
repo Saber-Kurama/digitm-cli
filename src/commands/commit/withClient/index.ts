@@ -1,7 +1,7 @@
 /*
  * @Author: saber
  * @Date: 2021-12-27 19:47:58
- * @LastEditTime: 2021-12-27 19:50:40
+ * @LastEditTime: 2021-12-27 20:08:42
  * @LastEditors: saber
  * @Description:
  */
@@ -17,7 +17,7 @@ const withClient = async (answers) => {
     const scope = answers.scope ? `(${answers.scope}): ` : ''
     const title = `${answers.gitmoji} ${scope}${answers.title}`
     // const isSigned = configurationVault.getSignedCommit() ? ['-S'] : []
-    const isSigned = ['-S'];
+    const isSigned = [];
 
     // if (await isHookCreated()) {
     //   return console.log(

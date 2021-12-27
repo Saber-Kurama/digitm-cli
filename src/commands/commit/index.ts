@@ -1,7 +1,7 @@
 /*
  * @Author: saber
  * @Date: 2021-12-27 17:57:46
- * @LastEditTime: 2021-12-27 19:47:30
+ * @LastEditTime: 2021-12-27 20:09:43
  * @LastEditors: saber
  * @Description:
  */
@@ -22,7 +22,6 @@ const promptAndCommit = (options: CommitOptions) =>
   getEmojis()
     .then((gitmojis) => prompts(gitmojis, options))
     .then((questions) => {
-      console.log('questions', questions)
       inquirer.prompt(questions).then((answers) => {
         // if (options.mode === COMMIT_MODES.HOOK) return withHook(answers);
 
@@ -31,7 +30,6 @@ const promptAndCommit = (options: CommitOptions) =>
     });
 
 const commit = (options: CommitOptions) => {
-  console.log('options:', options);
   // // options.mode = 'hook';
   // if (options.mode === COMMIT_MODES.HOOK) {
   //   registerHookInterruptionHandler()
