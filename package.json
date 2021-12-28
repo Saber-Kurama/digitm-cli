@@ -1,9 +1,9 @@
 {
   "name": "@temari/digitm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "git commit 规范的 表情emoji 的提交",
   "jsnext:source": "src/index.ts",
-  "main": "main/index.js",
+  "main": "lib/index.js",
   "engines": {
     "node": ">=12"
   },
