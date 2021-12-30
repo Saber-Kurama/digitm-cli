@@ -1,7 +1,7 @@
 /*
  * @Author: saber
  * @Date: 2021-12-27 19:00:31
- * @LastEditTime: 2021-12-27 19:57:12
+ * @LastEditTime: 2021-12-30 14:52:46
  * @LastEditors: saber
  * @Description:
  */
@@ -14,7 +14,6 @@ inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 export default (gitmojis, options): Array<Object> => {
   // const { title, message, scope } = getDefaultCommitContent(options)
-  console.log('>>gitmojis', gitmojis)
   const { title, message } = { title: null, message: null }
   return [
     {
