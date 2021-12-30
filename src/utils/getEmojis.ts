@@ -1,7 +1,7 @@
 /*
  * @Author: saber
  * @Date: 2021-12-27 18:02:18
- * @LastEditTime: 2021-12-27 20:09:58
+ * @LastEditTime: 2021-12-30 11:56:37
  * @LastEditors: saber
  * @Description:
  */
@@ -15,7 +15,8 @@ import cache from './emojisCache'
 import buildFetchOptions from './buildFetchOptions'
 // import configurationVault from './configurationVault'
 
-const getGitmojisUrl = 'http://127.0.0.1:5000/digitm.json';
+const getGitmojisUrl = 'http://image.parligerly.com/digitm.json';
+
 const getEmojis = async (
   skipCache: boolean = false
 ): Promise<Array<Object>> => {
