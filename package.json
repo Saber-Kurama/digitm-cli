@@ -1,6 +1,6 @@
 {
   "name": "@temari/digitm",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "git commit 规范的 表情emoji 的提交",
   "jsnext:source": "src/index.ts",
   "main": "lib/index.js",
@@ -14,7 +14,7 @@
     "lib"
   ],
   "scripts": {
-    "prepublish": "npm run buuld",
+    "prepublish": "npm run build",
     "build": "npm run build:ts",
     "build:ts": "tsc --build"
   },
